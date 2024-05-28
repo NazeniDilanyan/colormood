@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colormood</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Colormood</h1>
+      <p>Your Inspirational Color Palette</p>
+    </header>
+    <main>
+      <div class="color-box" id="color-box">
+        <div class="color" id="color1">
+          <span class="color-code">#4169E1</span>
+          <!-- Добавляем кнопку "замок" -->
+          <button class="lock-btn">🔒</button>
+        </div>
+        <div class="color" id="color2">
+          <span class="color-code">#008000</span>
+          <!-- Добавляем кнопку "замок" -->
+          <button class="lock-btn">🔒</button>
+        </div>
+        <div class="color" id="color3">
+          <span class="color-code">#FF4500</span>
+          <!-- Добавляем кнопку "замок" -->
+          <button class="lock-btn">🔒</button>
+        </div>
+        <div class="color" id="color4">
+          <span class="color-code">#800080</span>
+          <!-- Добавляем кнопку "замок" -->
+          <button class="lock-btn">🔒</button>
+        </div>
+        
+      </div>
+       <button id="generate-btn">Generate Colors</button>
+            <button id="save-btn">Save Palette</button>
+            <button id="show-palettes-btn">Show Saved Palettes</button>
+    </main>
+    <footer>
+      <p>Created by Nazeni Dilanyan</p>
+    </footer>
+  </div>
+
+  <!-- Modal Window -->
+  <div id="saved-palettes-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h2>Saved Palettes</h2>
+      <div id="saved-palettes"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
